@@ -1,0 +1,9 @@
+1. Docker
+2. Ghostty
+3. i3
+4. libs
+5. Neovim
+6. node
+7. rofi
+8. tmux
+9. vs-code
