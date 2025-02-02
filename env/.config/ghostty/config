@@ -1,0 +1,26 @@
+theme = "gruvbox-material-hard-dark"
+background-opacity = 0.98
+
+
+font-family = "CaskaydiaMono Nerd Font"
+font-size = 10
+
+shell-integration-features = no-cursor
+
+cursor-style = "block"
+cursor-style-blink = true
+
+window-decoration = true
+window-padding-x = 5
+window-padding-color = background
+window-padding-balance = true
+
+adjust-cell-height = 5%
+adjust-font-baseline = 5%
+adjust-underline-position = 5%
+adjust-underline-thickness = 5%
+adjust-strikethrough-position = 5%
+adjust-strikethrough-thickness = 5%
+adjust-cursor-thickness = 5%
+
+gtk-titlebar = false
