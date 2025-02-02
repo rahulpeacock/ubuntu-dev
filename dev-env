@@ -90,4 +90,5 @@ update_files $DEV_ENV/env/.config $XDG_CONFIG_HOME
 # update_files $DEV_ENV/env/.local $HOME/.local
 
 copy $DEV_ENV/env/.bashrc $HOME/.bashrc
+copy $DEV_ENV/env/.inputrc $HOME/.inputrc
 sudo_copy $DEV_ENV/env/bash_completion /usr/share/bash-completion/bash_completion
