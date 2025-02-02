@@ -14,7 +14,15 @@ addToPath() {
     fi
 }
 
+addToPathFront() {
+    if [[ "$PATH" != *"$1"* ]]; then
+        export PATH=$1:$PATH
+    fi
+}
+
 export PNPM_HOME="$HOME/.local/share/pnpm"
+
+addToPathFront $HOME/.local/n/bin/
 
 # Set complete path
 addToPath ./bin
@@ -27,4 +35,5 @@ addToPath $PNPM_HOME
 set +h
 
 export XDG_CONFIG_HOME="$HOME/.config"
-DEV_ENV="$HOME/ubuntu-dev"
+export N_PREFIX="$HOME/.local/n"
+export DEV_ENV="$HOME/ubuntu-dev"
