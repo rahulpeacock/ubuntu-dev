@@ -1,0 +1,29 @@
+# History control
+shopt -s histappend
+HISTCONTROL=ignoreboth
+HISTSIZE=32768
+HISTFILESIZE="${HISTSIZE}"
+
+# Autocompletion
+source /usr/share/bash-completion/bash_completion
+
+
+addToPath() {
+    if [[ "$PATH" != *"$1"* ]]; then
+        export PATH=$PATH:$1
+    fi
+}
+
+export PNPM_HOME="$HOME/.local/share/pnpm"
+
+# Set complete path
+addToPath ./bin
+addToPath $HOME/.local/bin
+addToPath $HOME/.local/npm/bin
+addToPath $HOME/.local/scripts
+addToPath $PNPM_HOME
+
+set +h
+
+export XDG_CONFIG_HOME="$HOME/.config"
+DEV_ENV="$HOME/ubuntu-dev"
