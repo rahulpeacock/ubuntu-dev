@@ -8,6 +8,20 @@ if [ -z "$XDG_CONFIG_HOME" ]; then
     XDG_CONFIG_HOME=$HOME/.config
 fi
 
+if [ -d "$XDG_CONFIG_HOME" ]; then
+    echo "~/.config directory exists."
+else
+    echo "~/.config directory does not exist. Please create ~/.config directory"
+    exit 1
+fi
+
+if [ -d "$HOME/.local" ]; then
+    echo "~/.local directory exists."
+else
+    echo "~/.local directory does not exist. Please create ~/.local directory"
+    exit 1
+fi
+
 if [ -z "$DEV_ENV" ]; then
     echo "env var DEV_ENV needs to be present"
     exit 1
