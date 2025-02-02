@@ -40,7 +40,7 @@ update_files() {
                 rm -rf $directory
             fi
 
-            log "    copying env: cp $c $2"
+            log "    copying env: cp -r $c $2"
             if [[ $dry_run == "0" ]]; then
                 cp -r ./$c $2
             fi
