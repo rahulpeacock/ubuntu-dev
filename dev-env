@@ -62,4 +62,4 @@ copy() {
 }
 
 update_files $DEV_ENV/env/.config $XDG_CONFIG_HOME
-update_files $DEV_ENV/env/.local $HOME/.local
+# update_files $DEV_ENV/env/.local $HOME/.local
