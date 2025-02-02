@@ -21,6 +21,7 @@ addToPath ./bin
 addToPath $HOME/.local/bin
 addToPath $HOME/.local/npm/bin
 addToPath $HOME/.local/scripts
+addToPath $HOME/.local/src/fzf/bin
 addToPath $PNPM_HOME
 
 set +h
