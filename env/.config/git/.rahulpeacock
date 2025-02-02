@@ -1,0 +1,6 @@
+[user]
+  name = Rahul Palamarthi
+  email = 87606332+rahulpeacock@users.noreply.github.com
+  
+[core]
+  sshCommand = "ssh -i ~/.ssh/rahulpeacock_key"

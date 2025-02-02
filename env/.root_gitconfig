@@ -1,0 +1,18 @@
+[alias]
+  co = checkout
+  br = branch
+  ci = commit
+  st = status
+
+[pull]
+  rebase = true
+
+[user]
+  name = Rahul Palamarthi
+  email = 87606332+rahulpeacock@users.noreply.github.com
+
+[includeIf "gitdir:$HOME/projects/rahulpeacock/"]
+    path = ~/.config/git/.rahulpeacock
+
+[core]
+  autocrlf = input
