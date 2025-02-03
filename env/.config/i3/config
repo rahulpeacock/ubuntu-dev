@@ -217,7 +217,7 @@ exec --no-startup-id xinput set-prop "SYNA2BA6:00 06CB:CE2D Touchpad" "libinput 
 exec --no-startup-id /usr/libexec/gsd-xsettings
 
 # Lock screen
-bindsym $mod+x exec i3lock --show-failed-attempts -i ~/Pictures/courage-wallpaper.png
+bindsym $mod+x exec i3lock --show-failed-attempts -c 32302f
 
 # Desktop wallpaper
 exec_always --no-startup-id feh --bg-scale ~/Pictures/mikhail-sharov-ford-wallpaper.jpg
