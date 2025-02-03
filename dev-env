@@ -22,6 +22,13 @@ else
     exit 1
 fi
 
+if [ -d "$HOME/.ssh" ]; then
+    echo "~/.ssh directory exists."
+else
+    echo "~/.ssh directory does not exist. Please create ~/.ssh directory"
+    exit 1
+fi
+
 if [ -z "$DEV_ENV" ]; then
     echo "env var DEV_ENV needs to be present"
     exit 1
@@ -92,4 +99,6 @@ update_files $DEV_ENV/env/.local $HOME/.local
 copy $DEV_ENV/env/.bashrc $HOME/.bashrc
 copy $DEV_ENV/env/.inputrc $HOME/.inputrc
 copy $DEV_ENV/env/.root_gitconfig $HOME/.gitconfig
+copy $DEV_ENV/env/config $HOME/.ssh/config
+
 sudo_copy $DEV_ENV/env/bash_completion /usr/share/bash-completion/bash_completion

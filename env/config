@@ -1,0 +1,6 @@
+# Rahul Palamarthi
+Host rahulpeacock
+	Hostname github.com
+	User git
+	IdentityFile /home/rahul/.ssh/rahulpeacock_key
+	IdentitiesOnly yes
