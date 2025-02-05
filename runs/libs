@@ -1,7 +1,7 @@
 #!/usr/bin/bash
 
 sudo apt -y update
-sudo apt -y install git ripgrep bat eza pavucontrol xclip jq tldr shutter python3-pip pulseaudio-utils xbacklight feh
+sudo apt -y install git ripgrep bat eza pavucontrol xclip jq tldr shutter python3-pip pulseaudio-utils xbacklight feh lxappearance fastfetch
 
 # zoxide
 curl -sSfL https://raw.githubusercontent.com/ajeetdsouza/zoxide/main/install.sh | sh
