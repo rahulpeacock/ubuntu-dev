@@ -13,7 +13,7 @@ set $mod Mod4
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
-font pango:monospace 8
+font pango:monospace 6
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
@@ -191,6 +191,9 @@ bindsym $mod+r mode "resize"
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
+        mode hide
+        hidden_state hide
+        modifier Mod1
         status_command i3status
 }
 
@@ -212,9 +215,6 @@ exec --no-startup-id xinput set-prop "SYNA2BA6:00 06CB:CE2D Touchpad" "libinput 
 
 # Enables natural scrolling to trackpad(touchpad)
 exec --no-startup-id xinput set-prop "SYNA2BA6:00 06CB:CE2D Touchpad" "libinput Natural Scrolling Enabled" 1
-
-# Enable GTK theme (dark mode)
-exec --no-startup-id /usr/libexec/gsd-xsettings
 
 # Lock screen
 bindsym $mod+x exec i3lock --show-failed-attempts -c 32302f
