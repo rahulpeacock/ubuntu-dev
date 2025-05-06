@@ -11,7 +11,7 @@
   name = Rahul Palamarthi
   email = 87606332+rahulpeacock@users.noreply.github.com
 
-[includeIf "gitdir:$HOME/projects/rahulpeacock/"]
+[includeIf "gitdir:/home/rahul/projects/rahulpeacock/"]
     path = ~/.config/git/.rahulpeacock
 
 [core]
